@@ -32,29 +32,27 @@ export const CryptoInfo = ({ cryptoCoin }) => {
   const vwap24 = Number(vwap24Hr).toFixed(2);
 
   return (
-    <tr className="crypto__body__row">
-      <td className="cypto__info py-3">{rank}</td>
-      <td className="cypto__info py-3 crypto__flex">
+    <tr className="crypto_row">
+      <td className="cypto_info py-3">{rank}</td>
+      <td className="cypto_info py-3 crypto_flex">
         <img
           className="crypto__img"
           src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`}
           alt="logo"
         />
-        <div className="crypto__flex__col">
+        <div className="crypto_flex_col">
           <span className="bold">{name}</span>
           <small>{symbol}</small>
         </div>
       </td>
-      <td className="crypto__info py-3">{`$ ${price}`}</td>
-      <td className="crypto__info py-3">{`$ ${marketCap}`}</td>
-      <td className="crypto__info py-3">{`$ ${vwap24}`}</td>
-      <td className="crypto__info py-3">{Supply}</td>
-      <td className="crypto__info py-3">{`$ ${volume}`}</td>
+      <td className="crypto_info py-3">{`$ ${price}`}</td>
+      <td className="crypto_info py-3">{`$ ${marketCap}`}</td>
+      <td className="crypto_info py-3">{`$ ${vwap24}`}</td>
+      <td className="crypto_info py-3">{Supply}</td>
+      <td className="crypto_info py-3">{`$ ${volume}`}</td>
       <td
         className={
-          changePer24Hr < 0
-            ? `crypto__info py-3 red`
-            : `crypto__info py-3 green`
+          changePer24Hr < 0 ? `crypto_info py-3 red` : `crypto_info py-3 green`
         }
       >
         {`${changePer24Hr} % `}

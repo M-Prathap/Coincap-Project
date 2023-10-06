@@ -17,18 +17,18 @@ export const CoinTable = () => {
 
   return (
     <>
-      <section className="crypto__container">
-        <table className="crypto__table">
+      <section className="crypto_container">
+        <table className="crypto_table">
           <thead>
-            <tr className="crypto__header__row">
-              <td className="Cypto__Info">Rank</td>
-              <td className="Cypto__Info crypto__name">Name</td>
-              <td className="Cypto__Info">Price</td>
-              <td className="Cypto__Info">Market Cap</td>
-              <td className="Cypto__Info">VWAP (24Hr) </td>
-              <td className="Cypto__Info">Supply</td>
-              <td className="Cypto__Info">Volume (24Hr) </td>
-              <td className="Cypto__Info">Change (24Hr)</td>
+            <tr className="crypto_header_row">
+              <td className="Cypto_Info">Rank</td>
+              <td className="Cypto_Info crypto_name">Name</td>
+              <td className="Cypto_Info">Price</td>
+              <td className="Cypto_Info">Market Cap</td>
+              <td className="Cypto_Info">VWAP (24Hr) </td>
+              <td className="Cypto_Info">Supply</td>
+              <td className="Cypto_Info">Volume (24Hr) </td>
+              <td className="Cypto_Info">Change (24Hr)</td>
             </tr>
           </thead>
           <tbody>
